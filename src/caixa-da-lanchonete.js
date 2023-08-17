@@ -1,7 +1,7 @@
 class CaixaDaLanchonete {
   // Defina os itens do menu junto com suas descrições, preços e extras associados
-  /*O método constructor() é usado para inicializar as propriedades da classe "CaixaDaLanchonete",
-  ele define a propriedade caardápiopara um objeto contendo os itens de menu com suas descrições,
+  /*O método constructor() foi usado para inicializar as propriedades da classe "CaixaDaLanchonete",
+  ele define a propriedade caardápio para um objeto contendo os itens de menu com suas descrições,
   preços e extras associados*/
   constructor() {
     this.cardapio = {
@@ -37,7 +37,7 @@ class CaixaDaLanchonete {
     this.acrescimoCredito = 0.03;
   }
 
-  // Calcula o custo total da compra com base na forma de pagamento e itens.
+  
   /**
    * A função `calcularValorDaCompra` calcula o valor total de uma compra com base no pagamento
   método e itens no carrinho, aplicando descontos ou sobretaxas dependendo do método de pagamento.
@@ -61,10 +61,10 @@ class CaixaDaLanchonete {
     if (itens.length === 0) {
       return "Não há itens no carrinho de compra!";
     }
-    // Initialize the total purchase value.
+    //Inicializa o valor total da compra
     let valorTotal = 0;
 
-    // Loop through each item in the cart.
+    // Loop por cada item do carrinho
     for (const itemStr of itens) {
       // Divida a string do item em código e quantidade do item
       const [codigo, quantidade] = itemStr.split(",");
